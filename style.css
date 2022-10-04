@@ -1,0 +1,399 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  outline: 0;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+a {
+  color: #c91b28;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+button {
+  background-color: #c91b28;
+  color: #fff;
+  border: none;
+  padding: 1rem 2rem;
+  font-weight: 600;
+}
+
+body {
+  background-color: #111111;
+  color: #fff;
+}
+
+header nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 8rem 0 4rem;
+  height: 10vh;
+}
+
+header nav ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+}
+
+header .hero {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+}
+
+.hero > img {
+  flex: 1;
+}
+
+.hero .about {
+  flex: 1;
+  margin-right: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
+}
+
+.hero .about h3 {
+  color: #c91b28;
+  font-size: 1.2rem;
+}
+
+.hero .about h1 {
+  font-size: 3rem;
+}
+
+.hero .about button {
+  margin-top: 1.5rem;
+}
+
+main .accolades {
+  background: linear-gradient(to right, #181818, #181818 50%, #111111 50%);
+  padding: 4rem 0;
+}
+
+.accolades .links {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.accolades .links > * {
+  background-color: #1e1e1e;
+  flex-basis: 22vw;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.accolades .links h3 {
+  font-size: 1.5rem;
+}
+
+.links p {
+  font-size: 1.4rem;
+}
+
+.accolades .links .two {
+  background-color: #c91b28;
+}
+
+.links .two a {
+  color: #fff;
+}
+
+.accolades .experience {
+  margin-top: 4rem;
+  display: grid;
+  grid-template-areas:
+    "total client xp"
+    "total project achieve";
+  gap: 1rem;
+  justify-content: center;
+}
+
+.experience > * {
+  background-color: #1e1e1e;
+  width: 22vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.experience div:first-child {
+  grid-area: total;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.experience div:first-child h2 {
+  color: #c91b28;
+  font-size: 3rem;
+  font-weight: 900;
+}
+
+.experience div:nth-child(2) {
+  grid-area: client;
+}
+
+.experience div:nth-child(3) {
+  grid-area: xp;
+}
+
+.experience div:nth-child(4) {
+  grid-area: project;
+}
+
+.experience div:last-child {
+  grid-area: achieve;
+}
+
+.experience div h3 {
+  color: #c91b28;
+  font-size: 2rem;
+  padding-top: 1rem;
+}
+
+.experience div p {
+  font-size: 0.9rem;
+  padding-bottom: 1rem;
+}
+
+.projects > div:first-child {
+  margin: 2rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-content: center;
+  gap: 1rem;
+  width: 66vw;
+}
+
+.projects > div:first-child h2 {
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+
+.projects > div:first-child button {
+  grid-row: span 2;
+  justify-self: end;
+  align-self: start;
+}
+
+.projects > div:first-child p {
+  font-size: 0.9rem;
+}
+
+.projects .display {
+  width: 66vw;
+  margin: 1rem auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  column-gap: 2rem;
+}
+
+.projects .display .proj .img {
+  background-color: #1e1e1e;
+  padding: 2rem 1rem;
+}
+
+.projects .display .proj h3 {
+  padding: 0.5rem 0;
+  font-size: 1.4rem;
+}
+
+.projects .display .proj:last-child .img {
+  padding-bottom: 4.5rem;
+}
+
+.work {
+  background-color: #1e1e1e;
+  width: 66vw;
+  margin: 2rem auto;
+  padding: 2rem 1rem;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+.work h2 {
+  font-size: 2rem;
+  margin-bottom: 00.5rem;
+}
+
+.work button {
+  grid-row: span 2;
+  justify-self: center;
+  align-self: center;
+}
+
+.work p {
+  font-size: 0.9rem;
+}
+
+.nav2 {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  list-style: none;
+  font-size: 0.8rem;
+}
+
+footer {
+  background-color: #1e1e1e;
+  margin-top: 1rem;
+}
+
+.footer-content {
+  margin: auto;
+  padding: 1rem 0;
+  width: 66vw;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.footer-content > * {
+  flex-basis: 27vw;
+}
+
+.footer-content .social > * {
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 900px) {
+  header nav {
+    margin: 0 2rem 0 1rem;
+  }
+  header nav ul {
+    gap: 1rem;
+  }
+  .hero .about {
+    margin-right: 2rem;
+  }
+  .hero .about h3 {
+    color: #c91b28;
+    font-size: 1rem;
+  }
+  .hero .about h1 {
+    font-size: 2.5rem;
+  }
+  .accolades .links {
+    flex-wrap: wrap;
+    margin: 0 2rem;
+  }
+  .accolades .links > * {
+    flex: 1;
+  }
+  .accolades .links h3 {
+    font-size: 1.4rem;
+  }
+  .experience > * {
+    width: 27vw;
+  }
+  .links p {
+    font-size: 1.2rem;
+  }
+  .projects > div:first-child h2 {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
+  .projects > div:first-child p {
+    font-size: 0.8rem;
+  }
+  .projects > div:first-child,
+  .projects .display,
+  .work,
+  .footer-content {
+    width: 88vw;
+  }
+  .projects .display .proj h3 {
+    font-size: 1.2rem;
+  }
+  .projects .display .proj:last-child .img {
+    padding-bottom: 4.2rem;
+  }
+  .work h2 {
+    font-size: 1.5rem;
+  }
+  .work p {
+    font-size: 0.8rem;
+  }
+  .nav2 {
+    gap: 1rem;
+    font-size: 0.6rem;
+  }
+  .footer-content > * {
+    flex-basis: 36vw;
+  }
+  .footer-content .social > * {
+    padding: 0 0.5rem;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  header nav {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 1rem 0 0.5rem;
+  }
+  header .hero {
+    flex-wrap: wrap;
+    height: auto;
+  }
+  .hero .about {
+    margin-right: 1rem;
+  }
+  .accolades .links {
+    margin: 0 1rem;
+  }
+  .accolades .experience {
+    grid-template-areas:
+      "total client"
+      "total xp"
+      "project achieve";
+    gap: 0.5rem;
+  }
+  .experience > * {
+    width: 33vw;
+  }
+  .projects > div:first-child,
+  .projects .display,
+  .work,
+  .footer-content {
+    width: 99vw;
+  }
+  .projects .display {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    row-gap: 2rem;
+  }
+  .projects .display .proj:last-child .img {
+    padding-bottom: 3.1rem;
+  }
+  .work {
+    grid-template-columns: 1fr;
+  }
+  .work button {
+    grid-row: span 1;
+    justify-self: start;
+    order: 1;
+    margin-top: 0.5rem;
+  }
+  .nav2 {
+    gap: 0.5rem;
+  }
+}
