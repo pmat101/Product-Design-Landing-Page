@@ -36,12 +36,14 @@ header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  gap: 4rem;
   margin: 0 8rem 0 4rem;
   height: 10vh;
 }
 
 header nav ul {
   display: flex;
+  flex-wrap: wrap;
   gap: 2rem;
   list-style: none;
 }
@@ -53,7 +55,7 @@ header .hero {
   height: 90vh;
 }
 
-.hero > img {
+.hero .hero-img {
   flex: 1;
 }
 
